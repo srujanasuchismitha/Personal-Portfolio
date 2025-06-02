@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education - Suchismitha</title>
+  <style>
+    /* Background gradient animation */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: linear-gradient(270deg, #6a11cb, #2575fc);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      padding: 2rem;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 2rem;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+      animation: slideUp 1.2s ease-out forwards;
+      transform: translateY(30px);
+      opacity: 0;
+      color: #f0f0f0;
+    }
+
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .education-item {
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+
+    .degree {
+      font-weight: 700; /* Bold heading */
+      font-size: 1.3rem;
+      color: #fff;
+      margin-bottom: 0.2rem;
+    }
+
+    .institution {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: #c0c0d0;
+}
+    .details {
+      font-size: 1rem;
+      margin-bottom: 0.1rem;
+      color: #b0b0cc;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      .degree {
+        font-size: 1.1rem;
+      }
+      .institution {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Education</h1>
+
+    <div class="education-item">
+      <div class="institution"><strong>B.Tech in Computer Science and Information Technology</strong></div>
+      <div class="institution">Institute of Aeronautical Engineering, Hyderabad</div>
+      <div class="details">GPA: 7.80/10</div>
+      <div class="details">Aug 2022 – May 2026</div>
+    </div>
+
+    <div class="education-item">
+      <div class="degree">High School</div>
+      <div class="institution">Goutham Model School, Hyderabad</div>
+      <div class="details">GPA: 9.8/10</div>
+      <div class="details">Aug 2019 – May 2020</div>
+    </div>
+
+  </div>
+</body>
+</html>

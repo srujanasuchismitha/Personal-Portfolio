@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills - Suchismitha</title>
+  <style>
+    /* Background gradient animation */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: linear-gradient(270deg, #6a11cb, #2575fc);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 2.5rem;
+      max-width: 720px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+      animation: slideUp 1.2s ease-out forwards;
+      transform: translateY(30px);
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .category {
+      margin-bottom: 1.5rem;
+    }
+
+    .emoji {
+      font-size: 2.5rem;
+      animation: pulse 2s infinite;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    strong {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .skills {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #f0f0f0;
+      margin-top: 0.3rem;
+    }
+
+    /* No contact buttons here, but if you want nav links, add below */
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .skills {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Skills</h1>
+
+    <div class="category">
+      <div class="emoji">💻</div>
+      <strong>Programming Languages</strong>
+      <div class="skills">Python, C</div>
+    </div>
+
+    <div class="category">
+      <div class="emoji">🛠️</div>
+      <strong>Tools & Technologies</strong>
+      <div class="skills">HTML, CSS</div>
+    </div>
+
+    <div class="category">
+      <div class="emoji">📊</div>
+      <strong>Data Science</strong>
+      <div class="skills">NumPy, Pandas, Matplotlib, Scikit-learn</div>
+    </div>
+
+    <div class="category">
+      <div class="emoji">🗄️</div>
+      <strong>Databases</strong>
+      <div class="skills">MySQL</div>
+    </div>
+
+    <div class="category">
+      <div class="emoji">🧠</div>
+      <strong>Soft Skills</strong>
+      <div class="skills">Communication, Time Management, Creative Thinking</div>
+    </div>
+  </div>
+</body>
+</html>

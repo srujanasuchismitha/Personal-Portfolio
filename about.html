@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Suchismitha</title>
+  <style>
+    /* Background gradient animation */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: linear-gradient(270deg, #6a11cb, #2575fc);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 2.5rem;
+      max-width: 720px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+      animation: slideUp 1.2s ease-out forwards;
+      transform: translateY(30px);
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .emoji {
+      font-size: 3rem;
+      animation: pulse 2s infinite;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      color: #f0f0f0;
+    }
+
+    strong {
+      color: #fff;
+    }
+
+    .contact {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: #fff;
+      background: rgba(0, 119, 204, 0.8);
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      background: rgba(0, 119, 204, 1);
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 600px) {
+      p {
+        font-size: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="emoji">👩‍💻</div>
+    <h1>Hello! I'm Suchismitha</h1>
+    <p>
+      I'm a passionate Computer Science student at the Institute of Aeronautical Engineering, Hyderabad,<br />
+      with a strong focus on Data Science and Artificial Intelligence.<br />
+      With a current GPA of <strong>7.80/10</strong>, I'm dedicated to pushing the boundaries of technology through innovative solutions.
+    </p>
+    <p>
+      My expertise lies in applying cutting-edge NLP techniques, machine learning algorithms, and data visualization<br />
+      to solve real-world problems. I'm particularly interested in developing AI systems that can understand and interact with human language naturally.
+    </p>
+    <div class="contact">
+      <a href="tel:+917093422357">📞 7093422357</a>
+      <a href="mailto:your-email@example.com">✉️ Email</a>
+      <a href="https://www.linkedin.com/in/srujana-suchismitha-91b328308/" target="_blank">💼 LinkedIn</a>
+      <a href="https://github.com/srujanasuchismitha" target="_blank">🔗 GitHub</a>
+    </div>
+  </div>
+</body>
+</html>

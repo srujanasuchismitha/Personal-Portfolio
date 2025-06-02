@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Suchismitha</title>
+  <style>
+    /* Background gradient animation */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: linear-gradient(270deg, #6a11cb, #2575fc);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      padding: 2rem;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 2rem;
+      max-width: 720px;
+      width: 100%;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+      animation: slideUp 1.2s ease-out forwards;
+      transform: translateY(30px);
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .project {
+      margin-bottom: 2rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 1.5rem;
+    }
+
+    .emoji {
+      font-size: 2.5rem;
+      animation: pulse 2.5s infinite;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.6rem;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    .project-title {
+      font-weight: 700;
+      font-size: 1.3rem;
+      display: inline-block;
+      vertical-align: middle;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 0.6rem;
+      color: #e0e0e0;
+    }
+
+    .tech-stack {
+      font-weight: 600;
+      color: #a0c8ff;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      .project-title {
+        font-size: 1.1rem;
+      }
+      .tech-stack {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Projects</h1>
+
+    <div class="project">
+      <span class="emoji">📊</span>
+      <div class="project-title">Heatmap Visualization Website</div>
+      <p class="description">
+        Developed an interactive heatmap visualization website using D3.js and Python. Processed data with Pandas and NumPy to ensure clean datasets for stunning visualizations.
+      </p>
+      <div class="tech-stack">D3.js, Python, Pandas, NumPy</div>
+    </div>
+
+    <div class="project">
+      <span class="emoji">🎤</span>
+      <div class="project-title">AI Voice Assistant Recommendation System</div>
+      <p class="description">
+        Designed and implemented an AI-driven recommendation system integrated with a voice assistant using NLP. Features speech recognition and text-to-speech for hands-free experience.
+      </p>
+      <div class="tech-stack">Python, JavaScript, PyTorch, NLP</div>
+    </div>
+
+    <div class="project">
+      <span class="emoji">🎵</span>
+      <div class="project-title">Music on Mood</div>
+      <p class="description">
+        Developed a personalized music recommendation system that suggests songs based on user's mood using facial expression and sentiment analysis techniques.
+      </p>
+      <div class="tech-stack">Python, Machine Learning, Computer Vision, Sentiment Analysis</div>
+    </div>
+  </div>
+</body>
+</html>

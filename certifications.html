@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certifications - Suchismitha</title>
+  <style>
+    /* Background gradient animation */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: linear-gradient(270deg, #6a11cb, #2575fc);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      padding: 2rem;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 2rem;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+      animation: slideUp 1.2s ease-out forwards;
+      transform: translateY(30px);
+      opacity: 0;
+      color: #f0f0f0;
+    }
+
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .certification {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .cert-title {
+      font-weight: 700; /* Bold heading */
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+
+    .cert-detail {
+      font-size: 1rem;
+      color: #c0c0d0;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      .cert-title {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Certifications</h1>
+    <div class="certification">
+      <div class="cert-title">HackerRank</div>
+      <div class="cert-detail">Certified in Python Basic</div>
+    </div>
+    <div class="certification">
+      <div class="cert-title">Free Code Camp</div>
+      <div class="cert-detail">Certified in Responsive Web Design</div>
+    </div>
+    <div class="certification">
+      <div class="cert-title">SkyScanner</div>
+      <div class="cert-detail">Certified in Software Engineering Job Simulation</div>
+    </div>
+    <div class="certification">
+      <div class="cert-title">Walmart</div>
+      <div class="cert-detail">Certified in Advanced Software Engineering Job Simulation</div>
+    </div>
+  </div>
+</body>
+</html>
